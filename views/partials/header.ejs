@@ -1,0 +1,12 @@
+<head>
+  <title>Message Carousel</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<% if(typeof errors != 'undefined') { %>
+<div class="error-container">
+<%    errors.forEach(function(error){ %>
+    <p> <%= error.msg %></p>
+<%    })        %>
+</div>
+<% } %>
